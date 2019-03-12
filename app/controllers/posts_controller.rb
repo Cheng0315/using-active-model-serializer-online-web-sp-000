@@ -8,7 +8,6 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-      #BEFORE using a serializer:
     render json: @post
   end
 
